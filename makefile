@@ -24,7 +24,7 @@ SOURCEDIR = ./src
 OUTPUTDIR = ./output
 
 #C FILES
-SRC = $(notdir ./src/*.cpp)
+SRC = $(notdir ./src/*.c)
 
 # Define Objects files.
 OBJS = $(patsubst %.c, $(OUTPUTDIR)/%.o, $(SRC))
