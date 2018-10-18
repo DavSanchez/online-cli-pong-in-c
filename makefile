@@ -24,7 +24,7 @@ SOURCEDIR = ./src
 OUTPUTDIR = ./output
 
 #C FILES
-SRC = pong_check.c pong_print.c pong_do.c pong.c
+SRC = $(notdir ./src/*.cpp)
 
 # Define Objects files.
 OBJS = $(patsubst %.c, $(OUTPUTDIR)/%.o, $(SRC))
